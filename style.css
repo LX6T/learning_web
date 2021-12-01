@@ -1,0 +1,23 @@
+h2:hover {
+    color: red;
+}
+
+.subtitle {
+    color: blue;
+}
+
+#form {
+    color: green;
+}
+
+li:nth-child(2) {
+    color: steelblue;
+}
+
+#google-link:link {
+    color: blue;
+}
+
+#google-link:visited {
+    color: red;
+}
