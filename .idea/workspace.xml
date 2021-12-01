@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25d1eda0-a709-4515-b231-01f2c0557112" name="Changes" comment="First commit">
+    <list default="true" id="25d1eda0-a709-4515-b231-01f2c0557112" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +66,16 @@
       <workItem from="1637373246102" duration="10560000" />
       <workItem from="1637888151466" duration="852000" />
       <workItem from="1638258336528" duration="3699000" />
-      <workItem from="1638325322576" duration="2032000" />
+      <workItem from="1638325322576" duration="2299000" />
     </task>
+    <task id="LOCAL-00001" summary="changed gitignore">
+      <created>1638335102191</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638335102191</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +83,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="changed gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed gitignore" />
   </component>
 </project>
