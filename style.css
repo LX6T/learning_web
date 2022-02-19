@@ -1,23 +1,54 @@
-h2:hover {
-    color: red;
+body {
+    background: rgba(200, 200, 250, 0.5);
+    background: linear-gradient(to bottom, #8fffff, #ffffff);
+    font-family: sans-serif;
+}
+
+#title {
+    color: rgb(86, 133, 250);
 }
 
 .subtitle {
-    color: blue;
+
+}
+
+.para-text {
+
+}
+
+#rainbow-gradient {
+    height: 10px;
+    width: 100%;
+
+    background: linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
+}
+
+#radial-gradient {
+    height: 300px;
+    width: 55%;
+    background: radial-gradient(circle, red, #9f009f, blue);
+    border: 5px solid black;
+    padding: 0 20px 0 20px;
+    margin: 20px;
+    float: right;
 }
 
 #form {
-    color: green;
+
 }
 
 li:nth-child(2) {
-    color: steelblue;
+
+}
+
+#link:link {
+
 }
 
 #google-link:link {
-    color: blue;
+
 }
 
 #google-link:visited {
-    color: red;
+
 }
