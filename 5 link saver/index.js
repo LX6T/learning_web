@@ -6,10 +6,20 @@ const ulEl = document.getElementById("ul-el")
 
 inputBtn.addEventListener("click", function() {
     myLinks.push(inputEl.value)
-
-    ulEl.innerHTML = ""
-    for (const link of myLinks) {
-        ulEl.innerHTML += "<li>" + link + "</li>"
-    }
+    inputEl.value = ""
+    renderLinks()
 })
 
+function renderLinks() {
+    let listItems = ""
+    for (const link of myLinks) {
+        listItems += `
+            <li>
+                <a target='_blank' href='${link}'>
+                    ${link}
+                </a>
+            </li>
+        `
+    }
+    ulEl.innerHTML = listItems
+}
