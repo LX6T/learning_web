@@ -46,12 +46,12 @@
         <!-- unordered list -->
         <ul>
             <li class="list-item">list item 1</li>
-            <!-- ordered list -->
-            <ol>
-                <li class="list-item">list item 2</li>
-            </ol>
-
         </ul>
+
+        <!-- ordered list -->
+        <ol>
+            <li class="list-item">list item 2</li>
+        </ol>
 
         <!-- anchor tag -->
         <p> Here's a link to <a href="https://www.google.com" target="_blank" id="link">Google</a></p>
@@ -79,16 +79,22 @@
         <!-- form example -->
         <h2 class="subtitle" id="form" style="color: steelblue;">Form input types</h2>
         <form>
-            <input type="text" value="input box"/>
-            <input type="password" />
-            <textarea rows="5" cols="30">text box</textarea>
+            <label>
+                <input type="text" value="input box"/>
+            </label>
+            <label>
+                <input type="password" />
+            </label>
+            <label>
+                <textarea rows="5" cols="30">text box</textarea>
+            </label>
         </form>
 
         <hr/>
 
         <!-- iframe example -->
         <h2 class="subtitle">iframe example</h2>
-        <iframe width="600" height="300" frameborder="0" src="http://giraffeacademy.com/">it broke</iframe>
+        <iframe width="600" height="300" style="border: none" src="https://giraffeacademy.com/">it broke</iframe>
 
         <hr/>
 
@@ -103,12 +109,12 @@
             <li>
                 cat but it's a link
                 <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
-                    <img height="100" src="cat.jpg" alt="cat 2"/>
+                    <img height="159" src="cat.jpg" alt="cat 2"/>
                 </a>
             </li>
             <li>
                 youtube iframe
-                <iframe height="200" frameborder="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe height="200" style="border: none" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </li>
         </ol>
 
@@ -142,6 +148,9 @@
     </main>
 
     <footer>
+        <a id="back-to-top">Top</a>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
