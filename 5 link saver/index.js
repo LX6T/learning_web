@@ -32,7 +32,7 @@ inputBtn.addEventListener("click", function() {
     render(myLinks)
 })
 
-inputBtn.addEventListener("click", function() {
+tabBtn.addEventListener("click", function() {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         myLinks.push(tabs[0].url)
         localStorage.setItem("links", JSON.stringify(myLinks))
