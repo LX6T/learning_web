@@ -1,17 +1,26 @@
+/* type selector */
 body {
+    /* rgba(red, green, blue, alpha(transparency)) */
     background: rgba(200, 200, 250, 0.5);
     background: linear-gradient(to bottom, #8fffff, #ffffff);
     font-family: sans-serif;
 }
 
+/* id selector */
 #title {
     color: rgb(86, 133, 250);
 }
 
+/* class selector */
 .subtitle {
 
 }
 
+/* shows borders around everything *//*
+* { border: 1px solid black}
+*/
+
+/* class selector */
 .para-text {
 
 }
@@ -37,18 +46,20 @@ body {
 
 }
 
+/* type selector for the 2nd child of a list item */
 li:nth-child(2) {
 
 }
 
-#link:link {
-
-}
-
-#google-link:link {
-
+/* style multiple selectors at once */
+#link:link, #google-link:link {
+    color: rgb(0, 0, 255);
 }
 
 #google-link:visited {
+    color: rgb(128, 0, 255);
+}
 
+a:hover {
+    color: rgb(0, 255, 0);
 }
