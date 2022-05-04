@@ -1,18 +1,19 @@
-
-let myLinks = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
+const tabBtn = document.getElementById("tab-btn")
+const deleteBtn = document.getElementById("delete-btn")
 const ulEl = document.getElementById("ul-el")
+const linksFromLocalStorage = JSON.parse(localStorage.getItem("links"))
+let myLinks = []
 
-inputBtn.addEventListener("click", function() {
-    myLinks.push(inputEl.value)
-    inputEl.value = ""
-    renderLinks()
-})
+if (linksFromLocalStorage) {
+    myLinks = linksFromLocalStorage
+    render(myLinks)
+}
 
-function renderLinks() {
+function render(links) {
     let listItems = ""
-    for (const link of myLinks) {
+    for (const link of links) {
         listItems += `
             <li>
                 <a target='_blank' href='${link}'>
@@ -23,3 +24,24 @@ function renderLinks() {
     }
     ulEl.innerHTML = listItems
 }
+
+inputBtn.addEventListener("click", function() {
+    myLinks.push(inputEl.value)
+    inputEl.value = ""
+    localStorage.setItem("links", JSON.stringify(myLinks))
+    render(myLinks)
+})
+
+inputBtn.addEventListener("click", function() {
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("links", JSON.stringify((tabs[0].url)))
+        render(myLinks)
+    })
+})
+
+deleteBtn.addEventListener("dblclick", function() {
+    myLinks = []
+    localStorage.clear()
+    render(myLinks)
+})
